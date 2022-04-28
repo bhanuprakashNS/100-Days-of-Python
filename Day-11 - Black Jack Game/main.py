@@ -1,5 +1,6 @@
-############### Blackjack Project #####################
+#....................... Blackjack Project................................ #
 # .... Created and Modified by N.S.Bhanuprakash on 15-03-2022 .............#
+# ...........Created in replit ..................... #
 
 import random
 from replit import clear 
