@@ -1,6 +1,6 @@
 # ........................... Stock News Alert .......................................... #
 # .............. Created and modified by NS Bhanuprakash on 15-04-2022 ............ #
-# If the stock price variation > 5%, then a twilio sms alert is sent our mobile along with
+# If the stock price variation > 5%, then a twilio sms alert is sent to our mobile along with
 # top 3 news headlines regd the company stock
 
 import requests
