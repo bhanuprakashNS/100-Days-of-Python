@@ -4,9 +4,10 @@
 import requests
 import datetime
 import pandas
+import os
 
 USER_NAME = "bhanuprakashns"
-TOKEN = "qwertyjklpgh"           # Api key
+TOKEN = os.getenv("token")           # Api key
 GRAPH_ID = "graph1"
 
 # .................Creating an account using Post request ......#
