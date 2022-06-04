@@ -1,1 +1,23 @@
+body {
+  background-color:#EAF6F6;
+}
+h1 {
+  color:#2F5D62
+}
+h3 {
+  color:#66BFBF
+}
+hr {
 
+  border-style: dotted none none;
+  width:10%;
+  border-width:5;
+  border-color: grey;
+}
+.myphoto{
+  border-radius: 100%;
+}
+.para:hover{
+  background-color: #FFF56D;
+  /*transition: 0.5s;*/
+}
