@@ -6,7 +6,7 @@ import os
 
 class NotificationManager:
     def __init__(self):
-        self.twilio_sid = "AC5ed109293f12d6a3fcbab5684c39dcf5"  # Hide it in environment variables
+        self.twilio_sid = os.getenv("twilio_sid")  # Hide it in environment variables
         self.twilio_auth_token = os.getenv("auth_token")  # Hide it in environment variables
         self.client = Client(self.twilio_sid, self.twilio_auth_token)
         self.message = ''
