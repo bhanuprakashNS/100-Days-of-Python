@@ -1,23 +1,24 @@
 # This class is responsible for sending notifications with the deal flight details.
 from twilio.rest import Client
 import smtplib
+import os
 
 
 class NotificationManager:
     def __init__(self):
         self.twilio_sid = "AC5ed109293f12d6a3fcbab5684c39dcf5"  # Hide it in environment variables
-        self.twilio_auth_token = "120909407da5a14a25639525ebc40fe2"  # Hide it in environment variables
+        self.twilio_auth_token = os.getenv("auth_token")  # Hide it in environment variables
         self.client = Client(self.twilio_sid, self.twilio_auth_token)
         self.message = ''
         self.from_email = "smtptrial22@gmail.com"  # Hide it in environment variables
-        self.password = "smgmail1995"  # Hide it in environment variables
+        self.password = os.getenv("password")  # Hide it in environment variables
         self.smtp_server = "smtp.gmail.com"
 
     def sms(self, sms):
         self.message = self.client.messages \
             .create(
             body=sms,
-            from_='+19706717349',
+            from_='+19xxxxxxxxxxx',
             to='+917989532395'
         )   # Hide "from" number in environment variables
         print(self.message.status)
