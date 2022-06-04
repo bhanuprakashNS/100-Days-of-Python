@@ -7,7 +7,7 @@ class DataManager:
         self.SHEETY_API_ENDPOINT = "https://api.sheety.co/d940733305c9a7b9c1afb5377504782b/flightDeals/prices"
         # Hide it in environment variables
         self.SHEETY_HEADER = {
-            "Authorization": "Bearer tomandjerry"
+            "Authorization": "Bearer xxxxxxxxx"
         }  # Hide it in environment variables
         self.response = requests.get(url=self.SHEETY_API_ENDPOINT, headers=self.SHEETY_HEADER)
         self.response.raise_for_status()
