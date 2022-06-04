@@ -5,8 +5,8 @@ import os
 
 class FlightSearch:
     def __init__(self):
-        self.TEQUILA_API_KEY = "JI-OCC7-sRpo-0y_oK0Wk4_sOe7oGWCP"   # Hide it in environment variables
-            # "JI-OCC7-sRpo-0y_oK0Wk4_sOe7oGWCP"
+        self.TEQUILA_API_KEY = os.getenv("tequila_api_key")   # Hide it in environment variables
+            
         # print(os.environ.get("TEQUILA_API_KEY"))
         self.TEQUILA_API_ENDPOINT = "https://tequila-api.kiwi.com"
         self.call_flight_data = "/v2/search"
