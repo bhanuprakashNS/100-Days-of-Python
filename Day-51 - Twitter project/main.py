@@ -13,7 +13,7 @@ PROMISED_DOWN = 40
 PROMISED_UP = 41
 CHROME_DRIVER_PATH = "C:\Development\chromedriver.exe"
 TWITTER_EMAIL = "smtptrial22@gmail.com"
-TWITTER_PASSWORD = "Smgmail@1995"
+TWITTER_PASSWORD = os.getenv("twt_password")
 SPEEDTEST_WEBSITE = "https://www.speedtest.net/"
 TWITTER_WEBSITE = "https://twitter.com/i/flow/login"
 S = Service(executable_path=CHROME_DRIVER_PATH)
